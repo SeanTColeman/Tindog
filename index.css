@@ -14,7 +14,7 @@ button {
 
 .wrapper {
     padding: .5rem;
-    max-width: 350px;
+    max-width: 320px;
 }
 
 img {
@@ -28,7 +28,7 @@ nav {
 }
 
 nav img {
-    height:40px;
+    height: 35px;
 }
 
 main {
@@ -60,8 +60,10 @@ main {
 
 #approve:hover {
     background-color: #DBFFF4;
+    transition: 0.3s;
 }
 
 #disapprove:hover {
     background-color: #FFE7EF;
+    transition: 0.3s;
 }
