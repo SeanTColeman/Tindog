@@ -1,0 +1,67 @@
+body {
+    margin:0;
+    padding:0;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.wrapper {
+    padding: .5rem;
+    max-width: 350px;
+}
+
+img {
+    width:100%;
+}
+
+nav {
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    height:40px;
+}
+
+main {
+   position: relative; 
+}
+
+.dog-image {
+    border-radius: .5rem;
+}
+
+.description {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+
+.choice-btns {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.choice-btn {
+    margin: 0 .5rem;
+    padding: 15px;
+    border-radius: 100%;
+    box-shadow: 0px 10px 20px #E9E9EA;
+}
+
+#approve:hover {
+    background-color: #DBFFF4;
+}
+
+#disapprove:hover {
+    background-color: #FFE7EF;
+}
