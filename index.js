@@ -6,10 +6,22 @@ import Dog from '/Dog.js'
 const dislikeBtn = document.getElementById('dislike-btn')
 const likeBtn = document.getElementById('like-btn')
 
-likeBtn.addEventListener('click', function(){
-    dog = new Dog(dogs[randomDog()])
-    render()
+dislikeBtn.addEventListener('click', () =>{
+    dog.dislike()
+    nextDog()
 })
+
+likeBtn.addEventListener('click', () => {
+    dog.like()
+    nextDog()
+})
+
+function nextDog() {
+    setTimeout(() => {
+        dog = new Dog(dogs[randomDog()])
+        render()
+    }, "1500") 
+}
 
 function render() {
     document.getElementById("main").innerHTML = dog.getDogHtml()

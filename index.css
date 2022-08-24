@@ -39,6 +39,15 @@ main {
     border-radius: .5rem;
 }
 
+#dislike-badge, #like-badge {
+    position: absolute;
+    width: 120px;
+    left: 20px;
+    top: 40px;
+    transform: rotate(-20deg);
+    display: none;
+}
+
 .description {
     position: absolute;
     bottom: 8px;
