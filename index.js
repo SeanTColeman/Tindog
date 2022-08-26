@@ -5,22 +5,28 @@ import Dog from '/Dog.js'
 
 const dislikeBtn = document.getElementById('dislike-btn')
 const likeBtn = document.getElementById('like-btn')
+const choiceBtns = document.getElementById('choice-btns')
+let waitingTurn = false
 
-dislikeBtn.addEventListener('click', () =>{
-    dog.dislike()
-    nextDog()
-})
-
-likeBtn.addEventListener('click', () => {
-    dog.like()
-    nextDog()
+choiceBtns.addEventListener('click', e => {
+    if (!waitingTurn) {
+        if (e.target == likeBtn || e.target.id == "like-btn-img") {
+            dog.like()
+            nextDog()
+        } else if (e.target == dislikeBtn || e.target.id == "dislike-btn-img") {
+            dog.dislike()
+            nextDog()
+        }
+    }
 })
 
 function nextDog() {
+    waitingTurn = true
     setTimeout(() => {
         dog = new Dog(dogs[randomDog()])
         render()
-    }, "1500") 
+        waitingTurn = false
+    }, "1000") 
 }
 
 function render() {
