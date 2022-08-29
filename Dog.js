@@ -1,5 +1,3 @@
-// Create the Dog class here
-
 class Dog {
     constructor(data) {
         Object.assign(this, data)
@@ -18,10 +16,13 @@ class Dog {
     }
 
     like() {
+        this.hasBeenLiked = true
+        this.hasBeenSwiped = true
         document.getElementById('like-badge').style.display = "block";
     }
 
     dislike() {
+        this.hasBeenSwiped = true
         document.getElementById('dislike-badge').style.display = "block";
     }
 }

@@ -10,7 +10,7 @@ const dogs = [
         name: "Bella",
         avatar: "images/dog-bella.jpg",
         age: 43,
-        bio: "Yup, that's my owner. U can meet him if you want",
+        bio: "Yup, that's my owner. U can meet him if you want.",
         hasBeenSwiped: false,
         hasBeenLiked: false
     },
@@ -25,5 +25,3 @@ const dogs = [
 ]
 
 export default dogs
-
-// Remember to export the data!

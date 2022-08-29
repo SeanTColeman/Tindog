@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;500&display=swap');
+
 body {
     margin:0;
     padding:0;
     display: flex;
     justify-content: center;
     color: white;
+    background-color:aliceblue;
+    font-family: 'Poppins', sans-serif;
 }
 
 button {
@@ -14,7 +18,12 @@ button {
 
 .wrapper {
     padding: .5rem;
-    max-width: 320px;
+    width: 320px;
+    background-color: white;
+    height: 585px;
+    border-radius: 1rem;
+    border: .5px solid gainsboro;
+    box-shadow: 0px 10px 20px #E9E9EA;
 }
 
 img {
@@ -33,6 +42,13 @@ nav img {
 
 main {
    position: relative; 
+   height: 450px;
+   width: 100%;
+   background-color:  beige;
+   border-radius: .5rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .dog-image {
@@ -52,6 +68,23 @@ main {
     position: absolute;
     bottom: 8px;
     left: 16px;
+    width:80%;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+
+.reset-msg {
+    color: black;
+    text-align: center;
+    background-color: white;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 80%;
+    border: .5px solid darkgray;
+    line-height: 1.5rem;
 }
 
 .choice-btns {
